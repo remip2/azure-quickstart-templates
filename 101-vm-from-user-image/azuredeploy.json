@@ -56,7 +56,7 @@
         }
     },
     "variables": {
-        "location": "West US",
+        "location": "North Europe",
         "publicIPAddressName": "myPublicIP",
         "vmName": "myVM",
         "virtualNetworkName": "myVNET",

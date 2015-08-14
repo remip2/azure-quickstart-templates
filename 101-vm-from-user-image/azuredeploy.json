@@ -169,6 +169,23 @@
                 ]
             }
         }
+    },
+    {
+      "apiVersion": "2015-05-01-preview",
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "name": "[concat(variables('vmName'),'/enablevmaccess')]",
+      "location": "[variables('location')]",
+      "dependsOn": [
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+      ],
+      "properties": {
+        "publisher": "Microsoft.OSTCExtensions",
+        "type": "LinuxDiagnostic",
+        "typeHandlerVersion": "2.0",
+        "settings": {
+            "storageAccount": "[parameters('userImageStorageAccountName')]"
+        }
+      }
     }
     ]
 }

@@ -1,0 +1,26 @@
+﻿{
+    "adminUsername": {
+        "value": "azureuser"
+    },
+    "adminPassword": {
+        "value": "Pass123!"
+    },
+    "userImageStorageAccountName": {
+        "value" : "testarmimage"
+    },
+    "userImageStorageContainerName" : {
+        "value" : "test-images"
+    },
+    "userImageVhdName" : {
+        "value" : "testcopy1.vhd"
+    },
+    "dnsNameForPublicIP": {
+        "value": "testarm1408"
+    },
+    "osType" : {
+        "value" : "linux"
+    },
+    "vmSize": {
+        "value": "Standard_A1"
+    }
+}

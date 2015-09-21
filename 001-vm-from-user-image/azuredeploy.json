@@ -2,6 +2,12 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters" : {
+    	"VMName": {
+            "type": "string",
+            "metadata": {
+                "description": "This is the name of the virtual machine"
+            }
+        },
         "userImageStorageAccountName": {
             "type": "string",
             "metadata": {
@@ -58,7 +64,7 @@
     "variables": {
         "location": "West Europe",
         "publicIPAddressName": "myPublicIP",
-        "vmName": "myVM",
+        "vmName": "[parameters('VMName')]",
         "virtualNetworkName": "myVNET",
         "nicName": "myVMNic",
         "addressPrefix":"10.0.0.0/16",
